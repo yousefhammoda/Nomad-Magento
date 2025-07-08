@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/config.xsd">
+    <default>
+        <carriers>
+            <nomadshipping>
+                <active>1</active>
+                <title>Nomad Shipping</title>
+                <name>Nomad Shipping</name>
+                <price>10</price>
+                <sort_order>100</sort_order>
+            </nomadshipping>
+        </carriers>
+    </default>
+</config>

@@ -1,0 +1,22 @@
+<?php /** @var \Magento\Backend\Block\Template $block */ ?>
+<h1><?php echo __('Return Requests'); ?></h1>
+<table class="data-grid">
+    <thead>
+        <tr>
+            <th><?php echo __('ID'); ?></th>
+            <th><?php echo __('Order'); ?></th>
+            <th><?php echo __('Customer'); ?></th>
+            <th><?php echo __('Status'); ?></th>
+        </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($block->getRequest()->getModel()->getCollection() as $request): ?>
+        <tr>
+            <td><?php echo $request->getId(); ?></td>
+            <td><?php echo $request->getOrderId(); ?></td>
+            <td><?php echo $request->getCustomerId(); ?></td>
+            <td><?php echo $request->getStatus(); ?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>

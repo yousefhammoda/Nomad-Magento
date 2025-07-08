@@ -1,0 +1,8 @@
+<form action="<?php echo $block->getUrl('shippingreturns/index/submit'); ?>" method="post">
+    <input type="hidden" name="form_key" value="<?php echo $block->getFormKey(); ?>" />
+    <div>
+        <label><?php echo __('Order ID'); ?></label>
+        <input type="text" name="order_id" required="required" />
+    </div>
+    <button type="submit"><?php echo __('Submit Return'); ?></button>
+</form>
